@@ -11,7 +11,6 @@ class SongsController < ApplicationController
     @song = Song.new
     @genres = Genre.order(:name)
     @artists = Artist.order(:name)
-    3.times {|x| @song.notes.build}
   end
 
   def create
